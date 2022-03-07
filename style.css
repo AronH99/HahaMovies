@@ -1,0 +1,101 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  min-height: 1000px;
+}
+.title {
+  color: white;
+}
+
+.label {
+  color: white;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.field.is-horizontal {
+  width: 80%;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.title.is-6 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.subtitle.is-4 {
+  font-size: 1rem;
+}
+
+.image {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+.image:hover {
+  opacity: 0.8;
+  pointer-events: visible;
+}
+
+.card-image:first-child img {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  aspect-ratio: 6/5;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+p:last-child {
+  color: rgb(102, 104, 103);
+  opacity: 70%;
+}
+.field {
+  gap: 1% !important;
+}
+@media screen and (max-width: 769px) {
+  .field {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.is-medium.input,
+.is-medium.textarea {
+  font-size: 1rem;
+}
+
+.button.is-medium {
+  font-size: 1rem;
+}
+
+.section {
+  padding: 1rem 1rem;
+}
+
+.input {
+  background: #c1c1c1;
+  color: black;
+}
+.button.is-info {
+  background-color: #c1c1c1;
+  border-color: transparent;
+  color: black;
+}
+
+button.is-info:hover {
+  background-color: rgb(72, 95, 199) !important;
+  border-color: transparent;
+  color: black !important;
+}

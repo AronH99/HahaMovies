@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">HaHa Movies</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <form>
+          <div class="field is-horizontal">
+            <!--    <div class="field-label is-medium">
+              <label class="label">Search a movie</label>
+            </div> -->
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input
+                    class="input is-medium"
+                    type="text"
+                    placeholder="Movie or description"
+                  />
+                </div>
+              </div>
+            </div>
+            <p class="control">
+              <button class="button is-info is-medium">Search</button>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Trending Movies</h2>
+        <div class="columns is-multiline"></div>
+      </div>
+    </section>
+    <template data-movies>
+      <div
+        class="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-quarter-fullhd"
+      >
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="%image%" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-6" id="ambetante">%title%</p>
+                <p class="subtitle is-4">Rating: %rating%</p>
+                <p class="subtitle is-4">%genre%</p>
+              </div>
+            </div>
+
+            <div class="omschrijving">%description%</div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
